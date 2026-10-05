@@ -1,4 +1,19 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>أوريكيت للصيانة</title><link rel="stylesheet" href="style.css"></head><body>
-<div id="login" class="login"><div class="login-box"><h1>أوريكيت</h1><p>نظام إدارة الصيانة</p><input id="email" type="email" placeholder="البريد الإلكتروني"><input id="password" type="password" placeholder="كلمة المرور"><button id="loginBtn">دخول</button><div id="loginMsg"></div></div></div>
-<div id="app" class="hidden"><aside><h1>أوريكيت</h1><small>للصيانة والخدمات</small><nav><button data-page="dashboard">🏠 الرئيسية</button><button data-page="customers">👥 العملاء</button><button data-page="requests">🔧 طلبات الصيانة</button><button data-page="technicians">👨‍🔧 الفنيون</button><button data-page="inventory">📦 قطع الغيار</button><button data-page="invoices">🧾 الفواتير</button><button data-page="reports">📊 التقارير</button></nav><button id="logout">تسجيل الخروج</button></aside><main><header><h2 id="title">الرئيسية</h2><span id="user"></span></header><section id="content"></section></main></div>
-<div id="modal" class="modal hidden"><div class="modalbox"><button id="close">×</button><div id="modalContent"></div></div></div><script type="module" src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220"><meta name="description" content="نظام احترافي لإدارة زيارات وصيانة أنظمة السلامة والدفاع المدني لشركة أوريكيت">
+<link rel="manifest" href="manifest.json"><title>أوريكيت | إدارة زيارات الدفاع المدني</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+<div id="login" class="login"><div class="login-box"><div class="brand-mark">O</div><h1>أوريكيت</h1><p>نظام إدارة زيارات الدفاع المدني</p><form id="loginForm"><label>البريد الإلكتروني<input id="email" type="email" value="admin@oriket.site" required></label><label>كلمة المرور<input id="password" type="password" value="123456" required></label><button class="primary wide">دخول النظام</button></form><div class="demo">نسخة تشغيلية تجريبية • البيانات تحفظ على الجهاز</div></div></div>
+<div id="app" class="hidden">
+<aside><div class="brand"><div class="brand-mark small">O</div><div><b>أوريكيت</b><small>الدفاع المدني</small></div></div>
+<nav id="nav"><button data-page="dashboard" class="active">⌂ <span>الرئيسية</span></button><button data-page="visits">✓ <span>الزيارات</span></button><button data-page="facilities">▣ <span>المنشآت</span></button><button data-page="map">⌖ <span>الخريطة</span></button><button data-page="reports">▤ <span>التقارير</span></button></nav>
+<div class="side-bottom"><div class="user-mini"><span>AD</span><div><b>المدير</b><small>Administrator</small></div></div><button id="logout" class="logout">↪ تسجيل الخروج</button></div></aside>
+<main><header><div><div class="eyebrow">ORKEIT • CIVIL DEFENSE</div><h2 id="title">لوحة التحكم</h2></div><div class="header-actions"><button id="installBtn" class="secondary hidden">تثبيت التطبيق</button><span id="clock"></span></div></header><section id="content"></section></main></div>
+<div id="modal" class="modal hidden"><div class="modalbox"><button id="close" class="close">×</button><div id="modalContent"></div></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script type="module" src="app.js"></script>
+</body></html>
