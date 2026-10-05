@@ -1,0 +1,14 @@
+{
+  "name":"أوريكيت - إدارة زيارات الدفاع المدني",
+  "short_name":"أوريكيت",
+  "description":"نظام احترافي لإدارة زيارات وفحص أنظمة السلامة والدفاع المدني لشركة أوريكيت.",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f5f7fa",
+  "theme_color":"#0b1220",
+  "dir":"rtl",
+  "lang":"ar",
+  "icons":[
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
